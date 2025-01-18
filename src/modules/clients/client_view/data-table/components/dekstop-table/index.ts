@@ -1,0 +1,1 @@
+export * from './dekstop-table';
