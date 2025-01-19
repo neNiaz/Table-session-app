@@ -63,7 +63,7 @@ export const Pagination: React.FC<PaginationProps> = ({
             key={button}
             size={'sm'}
             variant={'text'}
-            className={`!w-8 !h-8 flex items-center justify-center rounded-md border transition-all duration-300 ${
+            className={`!w-8 !h-8 flex items-center justify-center !bg-white rounded-md border transition-all duration-300 ${
               pageIndex === button
                 ? '!border-blue-600 !text-blue-600'
                 : 'border-transparent !text-gray-600 hover:!bg-gray-200 hover:!border-gray-300'

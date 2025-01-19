@@ -47,7 +47,7 @@ const MenuItems: React.FC<{ menuItems: MenuItem[]; isCollapsed: boolean }> = ({
   menuItems,
   isCollapsed,
 }) => (
-  <div className="w-full mb-8 gap-3 flex flex-col">
+  <div className="w-full mb-2 gap-1.5 flex flex-col">
     {menuItems.map((item, index) => (
       <Link
         key={index}
@@ -56,7 +56,7 @@ const MenuItems: React.FC<{ menuItems: MenuItem[]; isCollapsed: boolean }> = ({
           menuBarItemStyles({
             active: window.location.pathname.toLowerCase() === item.href,
           }),
-          'cursor-pointer flex items-center gap-2 whitespace-nowrap',
+          'cursor-pointer flex items-center gap-2 whitespace-nowrap max-h-[2.5rem]',
         )}
       >
         {item.icon}
